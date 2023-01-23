@@ -14,7 +14,7 @@ PM_START_TEXT = """
 ✘ **ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ 🔘 ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ℹ️**.
 """
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]start$"))
+@Zaid.on(events.NewMessage(pattern="^[?!/]vcstart$"))
 async def start(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
