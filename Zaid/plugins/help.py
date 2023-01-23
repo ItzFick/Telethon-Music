@@ -10,7 +10,7 @@ btn =[
 HELP_TEXT = "Welcome To help Menu Section\n\nClick on the Buttons!"
 
 
-@Zaid.on(events.NewMessage(pattern="[!?/]help"))
+@Zaid.on(events.NewMessage(pattern="[!?/]vchelp"))
 async def help(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
@@ -21,7 +21,7 @@ async def help(event):
 
     await event.reply(HELP_TEXT, buttons=btn)
 
-@Zaid.on(events.NewMessage(pattern="^/start help"))
+@Zaid.on(events.NewMessage(pattern="^/vcstart help"))
 async def _(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
